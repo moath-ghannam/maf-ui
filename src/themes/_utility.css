@@ -1,0 +1,38 @@
+/*
+ * This file contains utility classes that can't be contained in a component and must be applied to the light DOM. None
+ * of the rules in this stylesheet should target component tags or HTML tags, and all classes *must* start with ".mf-"
+ * to reduce the possibility of collisions.
+ */
+
+@supports (scrollbar-gutter: stable) {
+  .mf-scroll-lock {
+    scrollbar-gutter: stable !important;
+    overflow: hidden !important;
+  }
+}
+
+@supports not (scrollbar-gutter: stable) {
+  .mf-scroll-lock {
+    padding-right: var(--mf-scroll-lock-size) !important;
+    overflow: hidden !important;
+  }
+}
+
+.mf-toast-stack {
+  position: fixed;
+  top: 0;
+  inset-inline-end: 0;
+  z-index: var(--mf-z-index-toast);
+  width: 28rem;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.mf-toast-stack mf-alert {
+  margin: var(--mf-spacing-medium);
+}
+
+.mf-toast-stack mf-alert::part(base) {
+  box-shadow: var(--mf-shadow-large);
+}

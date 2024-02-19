@@ -1,0 +1,531 @@
+:host,
+.mf-theme-dark {
+  color-scheme: dark;
+
+  /*
+   * Color Primitives
+   */
+
+  /* Gray */
+  --mf-color-gray-50: hsl(240 5.1% 15%);
+  --mf-color-gray-100: hsl(240 5.7% 18.2%);
+  --mf-color-gray-200: hsl(240 4.6% 22%);
+  --mf-color-gray-300: hsl(240 5% 27.6%);
+  --mf-color-gray-400: hsl(240 5% 35.5%);
+  --mf-color-gray-500: hsl(240 3.7% 44%);
+  --mf-color-gray-600: hsl(240 5.3% 58%);
+  --mf-color-gray-700: hsl(240 5.6% 73%);
+  --mf-color-gray-800: hsl(240 7.3% 84%);
+  --mf-color-gray-900: hsl(240 9.1% 91.8%);
+  --mf-color-gray-950: hsl(0 0% 95%);
+
+  /* Red */
+  --mf-color-red-50: hsl(0 56% 23.9%);
+  --mf-color-red-100: hsl(0.6 60% 33.9%);
+  --mf-color-red-200: hsl(0.9 67.2% 37.1%);
+  --mf-color-red-300: hsl(1.1 71.3% 43.7%);
+  --mf-color-red-400: hsl(1 76% 52.5%);
+  --mf-color-red-500: hsl(0.7 89.6% 57.2%);
+  --mf-color-red-600: hsl(0 98.6% 67.9%);
+  --mf-color-red-700: hsl(0 100% 72.3%);
+  --mf-color-red-800: hsl(0 100% 85.6%);
+  --mf-color-red-900: hsl(0 100% 90.3%);
+  --mf-color-red-950: hsl(0 100% 95.9%);
+
+  /* Orange */
+  --mf-color-orange-50: hsl(15 64.2% 23.3%);
+  --mf-color-orange-100: hsl(15.1 70.9% 31.1%);
+  --mf-color-orange-200: hsl(15.3 75.7% 35.5%);
+  --mf-color-orange-300: hsl(17.1 83.5% 42.7%);
+  --mf-color-orange-400: hsl(20.1 88% 50.8%);
+  --mf-color-orange-500: hsl(24.3 100% 50.5%);
+  --mf-color-orange-600: hsl(27.2 100% 57.7%);
+  --mf-color-orange-700: hsl(31.3 100% 68.7%);
+  --mf-color-orange-800: hsl(33.8 100% 79.3%);
+  --mf-color-orange-900: hsl(38.9 100% 87.7%);
+  --mf-color-orange-950: hsl(46.2 100% 95%);
+
+  /* Amber */
+  --mf-color-amber-50: hsl(21.9 66.3% 21.1%);
+  --mf-color-amber-100: hsl(21.5 73.6% 29.7%);
+  --mf-color-amber-200: hsl(22.3 77.6% 33.3%);
+  --mf-color-amber-300: hsl(25.4 84.2% 39.6%);
+  --mf-color-amber-400: hsl(31.4 87.4% 46.7%);
+  --mf-color-amber-500: hsl(37 96.6% 48.3%);
+  --mf-color-amber-600: hsl(43.3 100% 53.4%);
+  --mf-color-amber-700: hsl(46.5 100% 61.1%);
+  --mf-color-amber-800: hsl(49.3 100% 73%);
+  --mf-color-amber-900: hsl(51.8 100% 85%);
+  --mf-color-amber-950: hsl(60 100% 94.6%);
+
+  /* Yellow */
+  --mf-color-yellow-50: hsl(32.5 60% 18.2%);
+  --mf-color-yellow-100: hsl(28.1 68.6% 29%);
+  --mf-color-yellow-200: hsl(31.3 75.8% 30.8%);
+  --mf-color-yellow-300: hsl(34.7 84.4% 35.3%);
+  --mf-color-yellow-400: hsl(40.1 87.3% 43.3%);
+  --mf-color-yellow-500: hsl(44.7 88% 46%);
+  --mf-color-yellow-600: hsl(47.7 100% 50.9%);
+  --mf-color-yellow-700: hsl(51.3 100% 59.9%);
+  --mf-color-yellow-800: hsl(54.6 100% 73%);
+  --mf-color-yellow-900: hsl(58.9 100% 84.2%);
+  --mf-color-yellow-950: hsl(60 100% 94%);
+
+  /* Lime */
+  --mf-color-lime-50: hsl(86.5 54.4% 18%);
+  --mf-color-lime-100: hsl(87.6 56.8% 23.3%);
+  --mf-color-lime-200: hsl(85.8 63.2% 24.5%);
+  --mf-color-lime-300: hsl(86.1 72% 29.4%);
+  --mf-color-lime-400: hsl(85.5 76.8% 37.3%);
+  --mf-color-lime-500: hsl(84.3 74.2% 42.1%);
+  --mf-color-lime-600: hsl(82.8 81.5% 52.6%);
+  --mf-color-lime-700: hsl(82 89.9% 64%);
+  --mf-color-lime-800: hsl(80.9 97.9% 76.6%);
+  --mf-color-lime-900: hsl(77.9 100% 85.8%);
+  --mf-color-lime-950: hsl(69.5 100% 93.8%);
+
+  /* Green */
+  --mf-color-green-50: hsl(144.3 53.6% 16%);
+  --mf-color-green-100: hsl(143.2 55.4% 23.5%);
+  --mf-color-green-200: hsl(141.5 58.2% 26.3%);
+  --mf-color-green-300: hsl(140.8 64.2% 31.8%);
+  --mf-color-green-400: hsl(140.3 68% 39.2%);
+  --mf-color-green-500: hsl(141.1 64.9% 43%);
+  --mf-color-green-600: hsl(141.6 72.4% 55.2%);
+  --mf-color-green-700: hsl(141.7 82.7% 70.1%);
+  --mf-color-green-800: hsl(141 90.9% 82.1%);
+  --mf-color-green-900: hsl(142 100% 89.1%);
+  --mf-color-green-950: hsl(144 100% 95.5%);
+
+  /* Emerald */
+  --mf-color-emerald-50: hsl(164.3 75% 13.5%);
+  --mf-color-emerald-100: hsl(163.5 72.6% 20.1%);
+  --mf-color-emerald-200: hsl(162.1 73.7% 22.4%);
+  --mf-color-emerald-300: hsl(161.3 77.3% 27.6%);
+  --mf-color-emerald-400: hsl(159.6 77.1% 34.3%);
+  --mf-color-emerald-500: hsl(159.1 73.5% 37.9%);
+  --mf-color-emerald-600: hsl(157.8 66.8% 48.9%);
+  --mf-color-emerald-700: hsl(156.2 76.1% 63.8%);
+  --mf-color-emerald-800: hsl(152.4 84.4% 77.4%);
+  --mf-color-emerald-900: hsl(149.3 100% 87%);
+  --mf-color-emerald-950: hsl(158.6 100% 94.8%);
+
+  /* Teal */
+  --mf-color-teal-50: hsl(176.5 51.5% 15.4%);
+  --mf-color-teal-100: hsl(175.9 54.7% 22.3%);
+  --mf-color-teal-200: hsl(175.9 60.7% 23.9%);
+  --mf-color-teal-300: hsl(174.5 67.3% 28.8%);
+  --mf-color-teal-400: hsl(174.4 71.9% 34.9%);
+  --mf-color-teal-500: hsl(173.1 71% 38.3%);
+  --mf-color-teal-600: hsl(172.3 68.2% 48.1%);
+  --mf-color-teal-700: hsl(170.5 81.3% 61.5%);
+  --mf-color-teal-800: hsl(168.4 92.1% 75.2%);
+  --mf-color-teal-900: hsl(168.3 100% 86%);
+  --mf-color-teal-950: hsl(180 100% 95.5%);
+
+  /* Cyan */
+  --mf-color-cyan-50: hsl(197.1 53.8% 20.3%);
+  --mf-color-cyan-100: hsl(196.8 57.3% 27.2%);
+  --mf-color-cyan-200: hsl(195.3 62.7% 29.4%);
+  --mf-color-cyan-300: hsl(193.5 71.3% 34.1%);
+  --mf-color-cyan-400: hsl(192.5 76.8% 40.6%);
+  --mf-color-cyan-500: hsl(189.4 78.6% 42.6%);
+  --mf-color-cyan-600: hsl(188.2 89.1% 51.7%);
+  --mf-color-cyan-700: hsl(187 98.6% 66.2%);
+  --mf-color-cyan-800: hsl(184.9 100% 78.3%);
+  --mf-color-cyan-900: hsl(180 100% 86.6%);
+  --mf-color-cyan-950: hsl(180 100% 94.8%);
+
+  /* Sky */
+  --mf-color-sky-50: hsl(203 63.8% 20.9%);
+  --mf-color-sky-100: hsl(203.4 70.4% 28%);
+  --mf-color-sky-200: hsl(202.7 75.8% 30.8%);
+  --mf-color-sky-300: hsl(203.1 80.4% 36.1%);
+  --mf-color-sky-400: hsl(202.1 80.5% 44.3%);
+  --mf-color-sky-500: hsl(199.7 85.9% 47.7%);
+  --mf-color-sky-600: hsl(198.7 97.9% 57.2%);
+  --mf-color-sky-700: hsl(198.7 100% 70.5%);
+  --mf-color-sky-800: hsl(198.8 100% 82.5%);
+  --mf-color-sky-900: hsl(198.5 100% 89.9%);
+  --mf-color-sky-950: hsl(186 100% 95.5%);
+
+  /* Blue */
+  --mf-color-blue-50: hsl(227.1 49.5% 22.7%);
+  --mf-color-blue-100: hsl(225.8 58.9% 36.8%);
+  --mf-color-blue-200: hsl(227.7 64.4% 42.9%);
+  --mf-color-blue-300: hsl(226.1 72.7% 51.2%);
+  --mf-color-blue-400: hsl(222.6 86.5% 56.3%);
+  --mf-color-blue-500: hsl(217.8 95.8% 57.4%);
+  --mf-color-blue-600: hsl(213.3 100% 65%);
+  --mf-color-blue-700: hsl(210.9 100% 74.8%);
+  --mf-color-blue-800: hsl(211.5 100% 83.4%);
+  --mf-color-blue-900: hsl(211 100% 88.9%);
+  --mf-color-blue-950: hsl(201.8 100% 95.3%);
+
+  /* Indigo */
+  --mf-color-indigo-50: hsl(243.5 40.8% 27%);
+  --mf-color-indigo-100: hsl(242.9 45.7% 37.6%);
+  --mf-color-indigo-200: hsl(244.7 52.7% 43.1%);
+  --mf-color-indigo-300: hsl(245.3 60.5% 52.4%);
+  --mf-color-indigo-400: hsl(244.1 79.2% 60.4%);
+  --mf-color-indigo-500: hsl(239.6 88.7% 63.8%);
+  --mf-color-indigo-600: hsl(234.5 96.7% 70.9%);
+  --mf-color-indigo-700: hsl(229.4 100% 78.3%);
+  --mf-color-indigo-800: hsl(227.1 100% 85%);
+  --mf-color-indigo-900: hsl(223.8 100% 89.9%);
+  --mf-color-indigo-950: hsl(220 100% 95.1%);
+
+  /* Violet */
+  --mf-color-violet-50: hsl(265.1 57.3% 25.4%);
+  --mf-color-violet-100: hsl(263.5 63.8% 39.4%);
+  --mf-color-violet-200: hsl(263.4 66.2% 44.1%);
+  --mf-color-violet-300: hsl(263.7 72.8% 52.4%);
+  --mf-color-violet-400: hsl(262.5 87.3% 59.8%);
+  --mf-color-violet-500: hsl(258.3 95.1% 63.2%);
+  --mf-color-violet-600: hsl(255.1 100% 67.2%);
+  --mf-color-violet-700: hsl(253 100% 81.5%);
+  --mf-color-violet-800: hsl(251.7 100% 87.9%);
+  --mf-color-violet-900: hsl(254.1 100% 91.7%);
+  --mf-color-violet-950: hsl(257.1 100% 96.1%);
+
+  /* Purple */
+  --mf-color-purple-50: hsl(276 54.3% 20.5%);
+  --mf-color-purple-100: hsl(273.6 61.8% 35.4%);
+  --mf-color-purple-200: hsl(272.9 64% 41.4%);
+  --mf-color-purple-300: hsl(271.9 68.1% 49.2%);
+  --mf-color-purple-400: hsl(271.5 85.1% 57.8%);
+  --mf-color-purple-500: hsl(270.7 96.4% 62.1%);
+  --mf-color-purple-600: hsl(270.5 100% 71.9%);
+  --mf-color-purple-700: hsl(270.9 100% 81.3%);
+  --mf-color-purple-800: hsl(272.4 100% 87.7%);
+  --mf-color-purple-900: hsl(276.7 100% 91.5%);
+  --mf-color-purple-950: hsl(300 100% 96.5%);
+
+  /* Fuchsia */
+
+  --mf-color-fuchsia-50: hsl(297.1 51.2% 18.6%);
+  --mf-color-fuchsia-100: hsl(296.7 59.5% 31.5%);
+  --mf-color-fuchsia-200: hsl(295.4 65.4% 35.1%);
+  --mf-color-fuchsia-300: hsl(294.6 67.4% 42.2%);
+  --mf-color-fuchsia-400: hsl(293.3 68.7% 51.2%);
+  --mf-color-fuchsia-500: hsl(292.1 88.4% 57.7%);
+  --mf-color-fuchsia-600: hsl(292 98.5% 59.5%);
+  --mf-color-fuchsia-700: hsl(292.4 100% 79.5%);
+  --mf-color-fuchsia-800: hsl(292.9 100% 86.8%);
+  --mf-color-fuchsia-900: hsl(300 100% 91.5%);
+  --mf-color-fuchsia-950: hsl(300 100% 96.3%);
+
+  /* Pink */
+  --mf-color-pink-50: hsl(336.2 59.6% 20%);
+  --mf-color-pink-100: hsl(336.8 63.9% 34%);
+  --mf-color-pink-200: hsl(336.8 68.7% 37.6%);
+  --mf-color-pink-300: hsl(336.1 71.8% 44.5%);
+  --mf-color-pink-400: hsl(333.9 74.9% 53.1%);
+  --mf-color-pink-500: hsl(330.7 86.3% 57.7%);
+  --mf-color-pink-600: hsl(328.6 91.5% 67.2%);
+  --mf-color-pink-700: hsl(327.4 97.6% 78.7%);
+  --mf-color-pink-800: hsl(325.1 100% 86.6%);
+  --mf-color-pink-900: hsl(322.1 100% 91.3%);
+  --mf-color-pink-950: hsl(315 100% 95.9%);
+
+  /* Rose */
+  --mf-color-rose-50: hsl(342.3 62.9% 21.5%);
+  --mf-color-rose-100: hsl(342.8 68.9% 34.2%);
+  --mf-color-rose-200: hsl(344.8 72.6% 37.3%);
+  --mf-color-rose-300: hsl(346.9 75.8% 43.7%);
+  --mf-color-rose-400: hsl(348.2 80.1% 52.7%);
+  --mf-color-rose-500: hsl(350.4 94.8% 57.5%);
+  --mf-color-rose-600: hsl(351.2 100% 58.1%);
+  --mf-color-rose-700: hsl(352.3 100% 78.1%);
+  --mf-color-rose-800: hsl(352 100% 86.2%);
+  --mf-color-rose-900: hsl(354.5 100% 90.7%);
+  --mf-color-rose-950: hsl(353.3 100% 95.7%);
+
+  /*
+   * Theme Tokens
+   */
+
+  /* Primary */
+  --mf-color-primary-50: var(--mf-color-sky-50);
+  --mf-color-primary-100: var(--mf-color-sky-100);
+  --mf-color-primary-200: var(--mf-color-sky-200);
+  --mf-color-primary-300: var(--mf-color-sky-300);
+  --mf-color-primary-400: var(--mf-color-sky-400);
+  --mf-color-primary-500: var(--mf-color-sky-500);
+  --mf-color-primary-600: var(--mf-color-sky-600);
+  --mf-color-primary-700: var(--mf-color-sky-700);
+  --mf-color-primary-800: var(--mf-color-sky-800);
+  --mf-color-primary-900: var(--mf-color-sky-900);
+  --mf-color-primary-950: var(--mf-color-sky-950);
+
+  /* Success */
+  --mf-color-success-50: var(--mf-color-green-50);
+  --mf-color-success-100: var(--mf-color-green-100);
+  --mf-color-success-200: var(--mf-color-green-200);
+  --mf-color-success-300: var(--mf-color-green-300);
+  --mf-color-success-400: var(--mf-color-green-400);
+  --mf-color-success-500: var(--mf-color-green-500);
+  --mf-color-success-600: var(--mf-color-green-600);
+  --mf-color-success-700: var(--mf-color-green-700);
+  --mf-color-success-800: var(--mf-color-green-800);
+  --mf-color-success-900: var(--mf-color-green-900);
+  --mf-color-success-950: var(--mf-color-green-950);
+
+  /* Warning */
+  --mf-color-warning-50: var(--mf-color-amber-50);
+  --mf-color-warning-100: var(--mf-color-amber-100);
+  --mf-color-warning-200: var(--mf-color-amber-200);
+  --mf-color-warning-300: var(--mf-color-amber-300);
+  --mf-color-warning-400: var(--mf-color-amber-400);
+  --mf-color-warning-500: var(--mf-color-amber-500);
+  --mf-color-warning-600: var(--mf-color-amber-600);
+  --mf-color-warning-700: var(--mf-color-amber-700);
+  --mf-color-warning-800: var(--mf-color-amber-800);
+  --mf-color-warning-900: var(--mf-color-amber-900);
+  --mf-color-warning-950: var(--mf-color-amber-950);
+
+  /* Danger */
+  --mf-color-danger-50: var(--mf-color-red-50);
+  --mf-color-danger-100: var(--mf-color-red-100);
+  --mf-color-danger-200: var(--mf-color-red-200);
+  --mf-color-danger-300: var(--mf-color-red-300);
+  --mf-color-danger-400: var(--mf-color-red-400);
+  --mf-color-danger-500: var(--mf-color-red-500);
+  --mf-color-danger-600: var(--mf-color-red-600);
+  --mf-color-danger-700: var(--mf-color-red-700);
+  --mf-color-danger-800: var(--mf-color-red-800);
+  --mf-color-danger-900: var(--mf-color-red-900);
+  --mf-color-danger-950: var(--mf-color-red-950);
+
+  /* Neutral */
+  --mf-color-neutral-50: var(--mf-color-gray-50);
+  --mf-color-neutral-100: var(--mf-color-gray-100);
+  --mf-color-neutral-200: var(--mf-color-gray-200);
+  --mf-color-neutral-300: var(--mf-color-gray-300);
+  --mf-color-neutral-400: var(--mf-color-gray-400);
+  --mf-color-neutral-500: var(--mf-color-gray-500);
+  --mf-color-neutral-600: var(--mf-color-gray-600);
+  --mf-color-neutral-700: var(--mf-color-gray-700);
+  --mf-color-neutral-800: var(--mf-color-gray-800);
+  --mf-color-neutral-900: var(--mf-color-gray-900);
+  --mf-color-neutral-950: var(--mf-color-gray-950);
+
+  /* Neutral one-offs */
+  --mf-color-neutral-0: hsl(240, 5.9%, 11%);
+  --mf-color-neutral-1000: hsl(0, 0%, 100%);
+
+  /*
+   * Border radii
+   */
+
+  --mf-border-radius-small: 0.1875rem; /* 3px */
+  --mf-border-radius-medium: 0.25rem; /* 4px */
+  --mf-border-radius-large: 0.5rem; /* 8px */
+  --mf-border-radius-x-large: 1rem; /* 16px */
+
+  --mf-border-radius-circle: 50%;
+  --mf-border-radius-pill: 9999px;
+
+  /*
+   * Elevations
+   */
+
+  --mf-shadow-x-small: 0 1px 2px rgb(0 0 0 / 18%);
+  --mf-shadow-small: 0 1px 2px rgb(0 0 0 / 24%);
+  --mf-shadow-medium: 0 2px 4px rgb(0 0 0 / 24%);
+  --mf-shadow-large: 0 2px 8px rgb(0 0 0 / 24%);
+  --mf-shadow-x-large: 0 4px 16px rgb(0 0 0 / 24%);
+
+  /*
+   * Spacings
+   */
+
+  --mf-spacing-3x-small: 0.125rem; /* 2px */
+  --mf-spacing-2x-small: 0.25rem; /* 4px */
+  --mf-spacing-x-small: 0.5rem; /* 8px */
+  --mf-spacing-small: 0.75rem; /* 12px */
+  --mf-spacing-medium: 1rem; /* 16px */
+  --mf-spacing-large: 1.25rem; /* 20px */
+  --mf-spacing-x-large: 1.75rem; /* 28px */
+  --mf-spacing-2x-large: 2.25rem; /* 36px */
+  --mf-spacing-3x-large: 3rem; /* 48px */
+  --mf-spacing-4x-large: 4.5rem; /* 72px */
+
+  /*
+   * Transitions
+   */
+
+  --mf-transition-x-slow: 1000ms;
+  --mf-transition-slow: 500ms;
+  --mf-transition-medium: 250ms;
+  --mf-transition-fast: 150ms;
+  --mf-transition-x-fast: 50ms;
+
+  /*
+   * Typography
+   */
+
+  /* Fonts */
+  --mf-font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  --mf-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --mf-font-serif: Georgia, 'Times New Roman', serif;
+
+  /* Font sizes */
+  --mf-font-size-2x-small: 0.625rem; /* 10px */
+  --mf-font-size-x-small: 0.75rem; /* 12px */
+  --mf-font-size-small: 0.875rem; /* 14px */
+  --mf-font-size-medium: 1rem; /* 16px */
+  --mf-font-size-large: 1.25rem; /* 20px */
+  --mf-font-size-x-large: 1.5rem; /* 24px */
+  --mf-font-size-2x-large: 2.25rem; /* 36px */
+  --mf-font-size-3x-large: 3rem; /* 48px */
+  --mf-font-size-4x-large: 4.5rem; /* 72px */
+
+  /* Font weights */
+  --mf-font-weight-light: 300;
+  --mf-font-weight-normal: 400;
+  --mf-font-weight-semibold: 500;
+  --mf-font-weight-bold: 700;
+
+  /* Letter spacings */
+  --mf-letter-spacing-denser: -0.03em;
+  --mf-letter-spacing-dense: -0.015em;
+  --mf-letter-spacing-normal: normal;
+  --mf-letter-spacing-loose: 0.075em;
+  --mf-letter-spacing-looser: 0.15em;
+
+  /* Line heights */
+  --mf-line-height-denser: 1;
+  --mf-line-height-dense: 1.4;
+  --mf-line-height-normal: 1.8;
+  --mf-line-height-loose: 2.2;
+  --mf-line-height-looser: 2.6;
+
+  /* Focus rings */
+  --mf-focus-ring-color: var(--mf-color-primary-700);
+  --mf-focus-ring-style: solid;
+  --mf-focus-ring-width: 3px;
+  --mf-focus-ring: var(--mf-focus-ring-style) var(--mf-focus-ring-width) var(--mf-focus-ring-color);
+  --mf-focus-ring-offset: 1px;
+
+  /*
+   * Forms
+   */
+
+  /* Buttons */
+  --mf-button-font-size-small: var(--mf-font-size-x-small);
+  --mf-button-font-size-medium: var(--mf-font-size-small);
+  --mf-button-font-size-large: var(--mf-font-size-medium);
+
+  /* Inputs */
+  --mf-input-height-small: 1.875rem; /* 30px */
+  --mf-input-height-medium: 2.5rem; /* 40px */
+  --mf-input-height-large: 3.125rem; /* 50px */
+
+  --mf-input-background-color: var(--mf-color-neutral-0);
+  --mf-input-background-color-hover: var(--mf-input-background-color);
+  --mf-input-background-color-focus: var(--mf-input-background-color);
+  --mf-input-background-color-disabled: var(--mf-color-neutral-100);
+  --mf-input-border-color: var(--mf-color-neutral-300);
+  --mf-input-border-color-hover: var(--mf-color-neutral-400);
+  --mf-input-border-color-focus: var(--mf-color-primary-500);
+  --mf-input-border-color-disabled: var(--mf-color-neutral-300);
+  --mf-input-border-width: 1px;
+  --mf-input-required-content: '*';
+  --mf-input-required-content-offset: -2px;
+  --mf-input-required-content-color: var(--mf-input-label-color);
+
+  --mf-input-border-radius-small: var(--mf-border-radius-medium);
+  --mf-input-border-radius-medium: var(--mf-border-radius-medium);
+  --mf-input-border-radius-large: var(--mf-border-radius-medium);
+
+  --mf-input-font-family: var(--mf-font-sans);
+  --mf-input-font-weight: var(--mf-font-weight-normal);
+  --mf-input-font-size-small: var(--mf-font-size-small);
+  --mf-input-font-size-medium: var(--mf-font-size-medium);
+  --mf-input-font-size-large: var(--mf-font-size-large);
+  --mf-input-letter-spacing: var(--mf-letter-spacing-normal);
+
+  --mf-input-color: var(--mf-color-neutral-700);
+  --mf-input-color-hover: var(--mf-color-neutral-700);
+  --mf-input-color-focus: var(--mf-color-neutral-700);
+  --mf-input-color-disabled: var(--mf-color-neutral-900);
+  --mf-input-icon-color: var(--mf-color-neutral-500);
+  --mf-input-icon-color-hover: var(--mf-color-neutral-600);
+  --mf-input-icon-color-focus: var(--mf-color-neutral-600);
+  --mf-input-placeholder-color: var(--mf-color-neutral-500);
+  --mf-input-placeholder-color-disabled: var(--mf-color-neutral-600);
+  --mf-input-spacing-small: var(--mf-spacing-small);
+  --mf-input-spacing-medium: var(--mf-spacing-medium);
+  --mf-input-spacing-large: var(--mf-spacing-large);
+
+  --mf-input-focus-ring-color: hsl(198.6 88.7% 48.4% / 40%);
+  --mf-input-focus-ring-offset: 0;
+
+  --mf-input-filled-background-color: var(--mf-color-neutral-100);
+  --mf-input-filled-background-color-hover: var(--mf-color-neutral-100);
+  --mf-input-filled-background-color-focus: var(--mf-color-neutral-100);
+  --mf-input-filled-background-color-disabled: var(--mf-color-neutral-100);
+  --mf-input-filled-color: var(--mf-color-neutral-800);
+  --mf-input-filled-color-hover: var(--mf-color-neutral-800);
+  --mf-input-filled-color-focus: var(--mf-color-neutral-700);
+  --mf-input-filled-color-disabled: var(--mf-color-neutral-800);
+
+  /* Labels */
+  --mf-input-label-font-size-small: var(--mf-font-size-small);
+  --mf-input-label-font-size-medium: var(--mf-font-size-medium);
+  --mf-input-label-font-size-large: var(--mf-font-size-large);
+  --mf-input-label-color: inherit;
+
+  /* Help text */
+  --mf-input-help-text-font-size-small: var(--mf-font-size-x-small);
+  --mf-input-help-text-font-size-medium: var(--mf-font-size-small);
+  --mf-input-help-text-font-size-large: var(--mf-font-size-medium);
+  --mf-input-help-text-color: var(--mf-color-neutral-500);
+
+  /* Toggles (checkboxes, radios, switches) */
+  --mf-toggle-size-small: 0.875rem; /* 14px */
+  --mf-toggle-size-medium: 1.125rem; /* 18px */
+  --mf-toggle-size-large: 1.375rem; /* 22px */
+
+  /*
+   * Overlays
+   */
+
+  --mf-overlay-background-color: hsl(0 0% 0% / 43%);
+
+  /*
+   * Panels
+   */
+
+  --mf-panel-background-color: var(--mf-color-neutral-50);
+  --mf-panel-border-color: var(--mf-color-neutral-200);
+  --mf-panel-border-width: 1px;
+
+  /*
+   * Tooltips
+   */
+
+  --mf-tooltip-border-radius: var(--mf-border-radius-medium);
+  --mf-tooltip-background-color: var(--mf-color-neutral-800);
+  --mf-tooltip-color: var(--mf-color-neutral-0);
+  --mf-tooltip-font-family: var(--mf-font-sans);
+  --mf-tooltip-font-weight: var(--mf-font-weight-normal);
+  --mf-tooltip-font-size: var(--mf-font-size-small);
+  --mf-tooltip-line-height: var(--mf-line-height-dense);
+  --mf-tooltip-padding: var(--mf-spacing-2x-small) var(--mf-spacing-x-small);
+  --mf-tooltip-arrow-size: 6px;
+
+  /*
+   * Z-indexes
+   */
+
+  --mf-z-index-drawer: 700;
+  --mf-z-index-dialog: 800;
+  --mf-z-index-dropdown: 900;
+  --mf-z-index-toast: 950;
+  --mf-z-index-tooltip: 1000;
+}
+
+/* _utility.css */
