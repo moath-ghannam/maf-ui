@@ -20,9 +20,6 @@ Shoemakers, or "maf-ui developers," can use this documentation to learn how to b
 
 Components are built with [LitElement](https://lit-element.polymer-project.org/), a custom elements base class that provides an intuitive API and reactive data binding. The build is a custom script with bundling powered by [esbuild](https://esbuild.github.io/).
 
-### Forking the Repo
-
-Start by [forking the repo](https://github.com/maf-ui/fork) on GitHub, then clone it locally and install dependencies.
 
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/maf-ui
