@@ -25,7 +25,7 @@ This integration has been tested with the following:
 To get started using maf-ui with NextJS, the following packages must be installed.
 
 ```bash
-yarn add @maf-ui copy-webpack-plugin next-compose-plugins next-transpile-modules
+yarn add maf-ui-kit copy-webpack-plugin next-compose-plugins next-transpile-modules
 ```
 
 ### Enabling ESM
@@ -44,7 +44,7 @@ There's one more step to enable ESM in NextJS, but we'll tackle that in our Next
 The next step is to import maf-ui's default theme (stylesheet) in your `_app.js` file:
 
 ```css
-import '@maf-ui/dist/themes/light.css';
+import 'maf-ui-kit/dist/themes/light.css';
 ```
 
 ### Defining Custom Elements
@@ -63,14 +63,14 @@ function CustomEls({ URL }) {
       return;
     }
 
-    import('@maf-ui/dist/utilities/base-path').then(({ setBasePath }) => {
+    import('maf-ui-kit/dist/utilities/base-path').then(({ setBasePath }) => {
       setBasePath(`${URL}/static/static`);
 
       // This imports all components
-      import('@maf-ui/dist/react');
+      import('maf-ui-kit/dist/react');
       // If you're wanting to selectively import components, replace this line with your own definitions
 
-      // import("@maf-ui/dist/components/button/button");
+      // import("maf-ui-kit/dist/components/button/button");
       customEls.current = true;
     });
   }, [URL, customEls]);
@@ -140,7 +140,7 @@ import CopyPlugin from 'copy-webpack-plugin';
 import withPlugins from 'next-compose-plugins';
 import withTM from 'next-transpile-modules';
 
-const withTMCompiled = withTM(['@maf-ui']);
+const withTMCompiled = withTM(['maf-ui-kit']);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -152,7 +152,7 @@ export default withPlugins([withTMCompiled], {
       new CopyPlugin({
         patterns: [
           {
-            from: resolve(__dirname, 'node_modules/@maf-ui/dist/assets/icons'),
+            from: resolve(__dirname, 'node_modules/maf-ui-kit/dist/assets/icons'),
             to: resolve(__dirname, 'static/icons')
           }
         ]

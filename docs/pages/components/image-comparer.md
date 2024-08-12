@@ -23,7 +23,7 @@ For best results, use images that share the same dimensions. The slider can be c
 ```
 
 ```jsx:react
-import MfImageComparer from '@maf-ui/dist/react/image-comparer';
+import MfImageComparer from 'maf-ui-kit/dist/react/image-comparer';
 
 const App = () => (
   <MfImageComparer>
@@ -63,7 +63,7 @@ Use the `position` attribute to set the initial position of the slider. This is 
 ```
 
 ```jsx:react
-import MfImageComparer from '@maf-ui/dist/react/image-comparer';
+import MfImageComparer from 'maf-ui-kit/dist/react/image-comparer';
 
 const App = () => (
   <MfImageComparer position={25}>

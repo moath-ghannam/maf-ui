@@ -16,8 +16,8 @@ Radios are designed to be used with [radio groups](/components/radio-group).
 ```
 
 ```jsx:react
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" name="a" value="1">
@@ -47,8 +47,8 @@ To set the initial value and checked state, use the `value` attribute on the con
 ```
 
 ```jsx:react
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" name="a" value="3">
@@ -72,8 +72,8 @@ Use the `disabled` attribute to disable a radio.
 ```
 
 ```jsx:react
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" name="a" value="1">
@@ -115,7 +115,7 @@ Add the `size` attribute to the [Radio Group](/components/radio-group) to change
 ```
 
 ```jsx react
-import MfRadio from '@maf-ui/dist/react/radio';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
 
 const App = () => (
   <>

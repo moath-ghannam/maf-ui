@@ -16,8 +16,8 @@ Tooltips use `display: contents` so they won't interfere with how elements are p
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <MfTooltip content="This is a tooltip">
@@ -126,8 +126,8 @@ Use the `placement` attribute to set the preferred placement of the tooltip.
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const css = `
   .tooltip-placement-example {
@@ -237,8 +237,8 @@ Set the `trigger` attribute to `click` to toggle the tooltip on click instead of
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <MfTooltip content="Click again to dismiss" trigger="click">
@@ -270,9 +270,9 @@ Tooltips can be controlled programmatically by setting the `trigger` attribute t
 
 ```jsx:react
 import { useState } from 'react';
-import MfAvatar from '@maf-ui/dist/react/avatar';
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfAvatar from 'maf-ui-kit/dist/react/avatar';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -306,8 +306,8 @@ You can control the size of tooltip arrows by overriding the `--mf-tooltip-arrow
 {% raw %}
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <div style={{ '--mf-tooltip-arrow-size': '0' }}>
@@ -345,8 +345,8 @@ Use the `content` slot to create tooltips with HTML content. Tooltips are design
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <MfTooltip>
@@ -372,8 +372,8 @@ Use the `--max-width` custom property to change the width the tooltip can grow t
 {% raw %}
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <MfTooltip style={{ '--max-width': '80px' }} content="This tooltip will wrap after only 80 pixels.">
@@ -410,8 +410,8 @@ Tooltips will be clipped if they're inside a container that has `overflow: auto|
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const css = `
   .tooltip-hoist {

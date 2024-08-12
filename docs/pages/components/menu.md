@@ -22,9 +22,9 @@ You can use [menu items](/components/menu-item), [menu labels](/components/menu-
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>
@@ -63,10 +63,10 @@ Menus work really well when used inside [dropdowns](/components/dropdown).
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfDropdown>
@@ -115,9 +115,9 @@ To create a submenu, nest an `<mf-menu slot="submenu">` in any [menu item](/comp
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>

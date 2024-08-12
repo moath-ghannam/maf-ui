@@ -10,7 +10,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfSpinner from '@maf-ui/dist/react/spinner';
+import MfSpinner from 'maf-ui-kit/dist/react/spinner';
 
 const App = () => <MfSpinner />;
 ```
@@ -30,7 +30,7 @@ Spinners are sized based on the current font size. To change their size, set the
 {% raw %}
 
 ```jsx:react
-import MfSpinner from '@maf-ui/dist/react/spinner';
+import MfSpinner from 'maf-ui-kit/dist/react/spinner';
 
 const App = () => (
   <>
@@ -54,7 +54,7 @@ The width of the spinner's track can be changed by setting the `--track-width` c
 {% raw %}
 
 ```jsx:react
-import MfSpinner from '@maf-ui/dist/react/spinner';
+import MfSpinner from 'maf-ui-kit/dist/react/spinner';
 
 const App = () => (
   <MfSpinner
@@ -79,7 +79,7 @@ The spinner's colors can be changed by setting the `--indicator-color` and `--tr
 {% raw %}
 
 ```jsx:react
-import MfSpinner from '@maf-ui/dist/react/spinner';
+import MfSpinner from 'maf-ui-kit/dist/react/spinner';
 
 const App = () => (
   <MfSpinner

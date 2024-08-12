@@ -27,7 +27,7 @@ Be sure to run `npm install` to install the default Laravel front-end dependenci
 ### Install the maf-ui package
 
 ```bash
-npm install @maf-ui
+npm install maf-ui-kit
 ```
 
 ### Import the Default Theme
@@ -35,7 +35,7 @@ npm install @maf-ui
 Import the maf-ui default theme (stylesheet) in `/resources/css/app.css`:
 
 ```css
-@import '/node_modules/@maf-ui/dist/themes/light.css';
+@import '/node_modules/maf-ui-kit/dist/themes/light.css';
 ```
 
 ### Import Your maf-ui Components
@@ -43,9 +43,9 @@ Import the maf-ui default theme (stylesheet) in `/resources/css/app.css`:
 Import each maf-ui component you plan to use in `/resources/js/bootstrap.js`. Use the full path to each component (as outlined in the [Cherry Picking instructions](https://maf-ui/getting-started/installation#cherry-picking)). You can find the full import statement for a component in the _Importing_ section of the component's documentation (use the _Bundler_ import). Your imports should look similar to:
 
 ```js
-import '@maf-ui/dist/components/button/button.js';
-import '@maf-ui/dist/components/icon/icon.js';
-import '@maf-ui/dist/components/dialog/dialog.js';
+import 'maf-ui-kit/dist/components/button/button.js';
+import 'maf-ui-kit/dist/components/icon/icon.js';
+import 'maf-ui-kit/dist/components/dialog/dialog.js';
 ```
 
 ### Copy the maf-ui Static Assets (icons, images, etc.) to a Public Folder
@@ -53,7 +53,7 @@ import '@maf-ui/dist/components/dialog/dialog.js';
 Since Vite has no way to copy arbitrary assets into your build (like webpack), you need to manually copy the maf-ui static assets to your project's public folder. Run this command from your project's root directory to copy the maf-ui static assets to the `./public/assets` folder:
 
 ```sh
-cp -aR node_modules/@maf-ui/dist/assets/ ./public/assets
+cp -aR node_modules/maf-ui-kit/dist/assets/ ./public/assets
 ```
 
 ### Set the Base Path
@@ -61,19 +61,19 @@ cp -aR node_modules/@maf-ui/dist/assets/ ./public/assets
 Add the base path to your maf-ui assets (icons, images, etc.) in `/resources/js/bootstrap.js`. The path must point to the same folder where you copy assets to in the next step.
 
 ```js
-import { setBasePath } from '@maf-ui/dist/utilities/base-path.js';
+import { setBasePath } from 'maf-ui-kit/dist/utilities/base-path.js';
 setBasePath('/');
 ```
 
 Example `/resources/js/bootstrap.js` file:
 
 ```js
-import { setBasePath } from '@maf-ui/dist/utilities/base-path.js';
+import { setBasePath } from 'maf-ui-kit/dist/utilities/base-path.js';
 setBasePath('/');
 
-import '@maf-ui/dist/components/button/button.js';
-import '@maf-ui/dist/components/icon/icon.js';
-import '@maf-ui/dist/components/dialog/dialog.js';
+import 'maf-ui-kit/dist/components/button/button.js';
+import 'maf-ui-kit/dist/components/icon/icon.js';
+import 'maf-ui-kit/dist/components/dialog/dialog.js';
 ```
 
 ### Verify Vite Entry Points

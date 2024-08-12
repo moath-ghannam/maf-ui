@@ -13,7 +13,7 @@ Localization is handled by the browser's [`Intl.DateTimeFormat` API](https://dev
 ```
 
 ```jsx:react
-import MfFormatDate from '@maf-ui/dist/react/format-date';
+import MfFormatDate from 'maf-ui-kit/dist/react/format-date';
 
 const App = () => <MfFormatDate date="2020-07-15T09:17:00-04:00" />;
 ```
@@ -51,7 +51,7 @@ Formatting options are based on those found in the [`Intl.DateTimeFormat` API](h
 ```
 
 ```jsx:react
-import MfFormatDate from '@maf-ui/dist/react/format-date';
+import MfFormatDate from 'maf-ui-kit/dist/react/format-date';
 
 const App = () => (
   <>
@@ -91,7 +91,7 @@ By default, the browser will determine whether to use 12-hour or 24-hour time. T
 ```
 
 ```jsx:react
-import MfFormatDate from '@maf-ui/dist/react/format-date';
+import MfFormatDate from 'maf-ui-kit/dist/react/format-date';
 
 const App = () => (
   <>
@@ -113,7 +113,7 @@ Russian: <mf-format-date lang="ru"></mf-format-date>
 ```
 
 ```jsx:react
-import MfFormatDate from '@maf-ui/dist/react/format-date';
+import MfFormatDate from 'maf-ui-kit/dist/react/format-date';
 
 const App = () => (
   <>

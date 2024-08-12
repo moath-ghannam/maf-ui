@@ -10,7 +10,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => <MfCheckbox>Checkbox</MfCheckbox>;
 ```
@@ -30,7 +30,7 @@ Use the `checked` attribute to activate the checkbox.
 ```
 
 ```jsx:react
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => <MfCheckbox checked>Checked</MfCheckbox>;
 ```
@@ -44,7 +44,7 @@ Use the `indeterminate` attribute to make the checkbox indeterminate.
 ```
 
 ```jsx:react
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => <MfCheckbox indeterminate>Indeterminate</MfCheckbox>;
 ```
@@ -58,7 +58,7 @@ Use the `disabled` attribute to disable the checkbox.
 ```
 
 ```jsx:react
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => <MfCheckbox disabled>Disabled</MfCheckbox>;
 ```
@@ -76,7 +76,7 @@ Use the `size` attribute to change a checkbox's size.
 ```
 
 ```jsx:react
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => (
   <>
@@ -98,7 +98,7 @@ Add descriptive help text to a switch with the `help-text` attribute. For help t
 ```
 
 ```jsx:react
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => <MfCheckbox help-text="What should the user know about the switch?">Label</MfCheckbox>;
 ```
@@ -141,8 +141,8 @@ Use the `setCustomValidity()` method to set a custom validation message. This wi
 
 ```jsx:react
 import { useEffect, useRef } from 'react';
-import MfButton from '@maf-ui/dist/react/button';
-import MfCheckbox from '@maf-ui/dist/react/checkbox';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfCheckbox from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => {
   const checkbox = useRef(null);

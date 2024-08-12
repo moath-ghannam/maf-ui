@@ -10,7 +10,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfSwitch from '@maf-ui/dist/react/switch';
+import MfSwitch from 'maf-ui-kit/dist/react/switch';
 
 const App = () => <MfSwitch>Switch</MfSwitch>;
 ```
@@ -30,7 +30,7 @@ Use the `checked` attribute to activate the switch.
 ```
 
 ```jsx:react
-import MfSwitch from '@maf-ui/dist/react/switch';
+import MfSwitch from 'maf-ui-kit/dist/react/switch';
 
 const App = () => <MfSwitch checked>Checked</MfSwitch>;
 ```
@@ -44,7 +44,7 @@ Use the `disabled` attribute to disable the switch.
 ```
 
 ```jsx:react
-import MfSwitch from '@maf-ui/dist/react/switch';
+import MfSwitch from 'maf-ui-kit/dist/react/switch';
 
 const App = () => <MfSwitch disabled>Disabled</MfSwitch>;
 ```
@@ -62,7 +62,7 @@ Use the `size` attribute to change a switch's size.
 ```
 
 ```jsx:react
-import MfSwitch from '@maf-ui/dist/react/switch';
+import MfSwitch from 'maf-ui-kit/dist/react/switch';
 
 const App = () => (
   <>
@@ -84,7 +84,7 @@ Add descriptive help text to a switch with the `help-text` attribute. For help t
 ```
 
 ```jsx:react
-import MfSwitch from '@maf-ui/dist/react/checkbox';
+import MfSwitch from 'maf-ui-kit/dist/react/checkbox';
 
 const App = () => <MfSwitch help-text="What should the user know about the switch?">Label</MfSwitch>;
 ```
@@ -100,7 +100,7 @@ Use the available custom properties to change how the switch is styled.
 {% raw %}
 
 ```jsx:react
-import MfSwitch from '@maf-ui/dist/react/switch';
+import MfSwitch from 'maf-ui-kit/dist/react/switch';
 
 const App = () => (
   <MfSwitch

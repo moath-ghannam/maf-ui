@@ -17,20 +17,20 @@ These instructions are for Vue 2. If you're using Vue 3 or above, please see the
 To add maf-ui to your Vue app, install the package from npm.
 
 ```bash
-npm install @maf-ui
+npm install maf-ui-kit
 ```
 
 Next, [include a theme](/getting-started/themes) and set the [base path](/getting-started/installation#setting-the-base-path) for icons and other assets. In this example, we'll import the light theme and use the CDN as a base path.
 
 ```jsx
-import '@maf-ui/%NPMDIR%/themes/light.css';
-import { setBasePath } from '@maf-ui/%NPMDIR%/utilities/base-path';
+import 'maf-ui-kit/%NPMDIR%/themes/light.css';
+import { setBasePath } from 'maf-ui-kit/%NPMDIR%/utilities/base-path';
 
-setBasePath('https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/');
+setBasePath('https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/');
 ```
 
 :::tip
-If you'd rather not use the CDN for assets, you can create a build task that copies `node_modules/@maf-ui/dist/assets` into a public folder in your app. Then you can point the base path to that folder instead.
+If you'd rather not use the CDN for assets, you can create a build task that copies `node_modules/maf-ui-kit/dist/assets` into a public folder in your app. Then you can point the base path to that folder instead.
 :::
 
 ## Configuration

@@ -27,8 +27,8 @@ Localization is handled by the browser's [`Intl.NumberFormat` API](https://devel
 
 ```jsx:react
 import { useState } from 'react';
-import MfFormatNumber from '@maf-ui/dist/react/format-number';
-import MfInput from '@maf-ui/dist/react/input';
+import MfFormatNumber from 'maf-ui-kit/dist/react/format-number';
+import MfInput from 'maf-ui-kit/dist/react/input';
 
 const App = () => {
   const [value, setValue] = useState(1000);
@@ -67,7 +67,7 @@ To get the value as a percent, set the `type` attribute to `percent`.
 ```
 
 ```jsx:react
-import MfFormatNumber from '@maf-ui/dist/react/format-number';
+import MfFormatNumber from 'maf-ui-kit/dist/react/format-number';
 
 const App = () => (
   <>
@@ -95,7 +95,7 @@ Russian: <mf-format-number value="2000" lang="ru" minimum-fraction-digits="2"></
 ```
 
 ```jsx:react
-import MfFormatNumber from '@maf-ui/dist/react/format-number';
+import MfFormatNumber from 'maf-ui-kit/dist/react/format-number';
 
 const App = () => (
   <>
@@ -121,7 +121,7 @@ To format a number as a monetary value, set the `type` attribute to `currency` a
 ```
 
 ```jsx:react
-import MfFormatNumber from '@maf-ui/dist/react/format-number';
+import MfFormatNumber from 'maf-ui-kit/dist/react/format-number';
 
 const App = () => (
   <>

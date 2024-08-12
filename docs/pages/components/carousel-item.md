@@ -41,8 +41,8 @@ layout: component
 ```
 
 ```jsx:react
-import MfCarousel from '@maf-ui/dist/react/carousel';
-import MfCarouselItem from '@maf-ui/dist/react/carousel-item';
+import MfCarousel from 'maf-ui-kit/dist/react/carousel';
+import MfCarouselItem from 'maf-ui-kit/dist/react/carousel-item';
 
 const App = () => (
   <MfCarousel pagination>

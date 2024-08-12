@@ -14,8 +14,8 @@ layout: component
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect>
@@ -41,8 +41,8 @@ Use the `disabled` attribute to disable an option and prevent it from being sele
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect>

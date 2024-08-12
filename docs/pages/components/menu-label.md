@@ -22,10 +22,10 @@ layout: component
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuLabel from '@maf-ui/dist/react/menu-label';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuLabel from 'maf-ui-kit/dist/react/menu-label';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>

@@ -41,9 +41,9 @@ layout: component
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfCard from '@maf-ui/dist/react/card';
-import MfRating from '@maf-ui/dist/react/rating';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfCard from 'maf-ui-kit/dist/react/card';
+import MfRating from 'maf-ui-kit/dist/react/rating';
 
 const css = `
   .card-overview {
@@ -106,7 +106,7 @@ Basic cards aren't very exciting, but they can display any content you want them
 ```
 
 ```jsx:react
-import MfCard from '@maf-ui/dist/react/card';
+import MfCard from 'maf-ui-kit/dist/react/card';
 
 const css = `
   .card-basic {
@@ -161,8 +161,8 @@ Headers can be used to display titles and more.
 ```
 
 ```jsx:react
-import MfCard from '@maf-ui/dist/react/card';
-import MfIconButton from '@maf-ui/dist/react/icon-button';
+import MfCard from 'maf-ui-kit/dist/react/card';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
 
 const css = `
   .card-header {
@@ -227,9 +227,9 @@ Footers can be used to display actions, summaries, or other relevant content.
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfCard from '@maf-ui/dist/react/card';
-import MfRating from '@maf-ui/dist/react/rating';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfCard from 'maf-ui-kit/dist/react/card';
+import MfRating from 'maf-ui-kit/dist/react/rating';
 
 const css = `
   .card-footer {
@@ -282,7 +282,7 @@ Cards accept an `image` slot. The image is displayed atop the card and stretches
 ```
 
 ```jsx:react
-import MfCard from '@maf-ui/dist/react/card';
+import MfCard from 'maf-ui-kit/dist/react/card';
 
 const css = `
   .card-image {

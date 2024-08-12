@@ -28,10 +28,10 @@ layout: component
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>
@@ -89,11 +89,11 @@ Add content to the start and end of menu items using the `prefix` and `suffix` s
 {% raw %}
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>
@@ -137,8 +137,8 @@ Add the `disabled` attribute to disable the menu item so it cannot be selected.
 {% raw %}
 
 ```jsx:react
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>
@@ -166,8 +166,8 @@ Use the `loading` attribute to indicate that a menu item is busy. Like a disable
 {% raw %}
 
 ```jsx:react
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>
@@ -197,8 +197,8 @@ Checkbox menu items are visually indistinguishable from regular menu items. Thei
 {% raw %}
 
 ```jsx:react
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>
@@ -247,8 +247,8 @@ The `value` attribute can be used to assign a hidden value, such as a unique ide
 {% raw %}
 
 ```jsx:react
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => {
   function handleSelect(event) {

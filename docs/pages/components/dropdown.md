@@ -33,12 +33,12 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfDropdown>
@@ -98,10 +98,10 @@ When dropdowns are used with [menus](/components/menu), you can listen for the [
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => {
   function handleSelect(event) {
@@ -151,10 +151,10 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => {
   function handleCut() {
@@ -203,11 +203,11 @@ The preferred placement of the dropdown can be set with the `placement` attribut
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfDropdown placement="top-start">
@@ -245,11 +245,11 @@ The distance from the panel to the trigger can be customized using the `distance
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfDropdown distance={30}>
@@ -287,11 +287,11 @@ The offset of the panel along the trigger can be customized using the `skidding`
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfDropdown skidding={30}>
@@ -347,11 +347,11 @@ To create a submenu, nest an `<mf-menu slot="submenu">` element in a [menu item]
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const css = `
   .dropdown-hoist {
@@ -436,11 +436,11 @@ Dropdown panels will be clipped if they're inside a container that has `overflow
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const css = `
   .dropdown-hoist {

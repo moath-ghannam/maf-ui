@@ -13,7 +13,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfAnimatedImage from '@maf-ui/dist/react/animated-image';
+import MfAnimatedImage from 'maf-ui-kit/dist/react/animated-image';
 
 const App = () => (
   <MfAnimatedImage
@@ -41,7 +41,7 @@ Both GIF and WEBP images are supported.
 ```
 
 ```jsx:react
-import MfAnimatedImage from '@maf-ui/dist/react/animated-image';
+import MfAnimatedImage from 'maf-ui-kit/dist/react/animated-image';
 
 const App = () => (
   <MfAnimatedImage src="https://shoelace.style/assets/images/tie.webp" alt="Animation of a shoe being tied" />
@@ -64,7 +64,7 @@ To set a custom size, apply a width and/or height to the host element.
 {% raw %}
 
 ```jsx:react
-import MfAnimatedImage from '@maf-ui/dist/react/animated-image';
+import MfAnimatedImage from 'maf-ui-kit/dist/react/animated-image';
 
 const App = () => (
   <MfAnimatedImage
@@ -102,7 +102,7 @@ You can change the appearance and location of the control box by targeting the `
 ```
 
 ```jsx:react
-import MfAnimatedImage from '@maf-ui/dist/react/animated-image';
+import MfAnimatedImage from 'maf-ui-kit/dist/react/animated-image';
 
 const css = `
   .animated-image-custom-control-box::part(control-box) {

@@ -45,8 +45,8 @@ The mutation observer will report changes to the content it wraps through the `m
 
 ```jsx:react
 import { useState } from 'react';
-import MfButton from '@maf-ui/dist/react/button';
-import MfMutationObserver from '@maf-ui/dist/react/mutation-observer';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfMutationObserver from 'maf-ui-kit/dist/react/mutation-observer';
 
 const css = `
   .resize-observer-overview div {
@@ -147,8 +147,8 @@ Use the `child-list` attribute to watch for new child elements that are added or
 
 ```jsx:react
 import { useState } from 'react';
-import MfButton from '@maf-ui/dist/react/button';
-import MfMutationObserver from '@maf-ui/dist/react/mutation-observer';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfMutationObserver from 'maf-ui-kit/dist/react/mutation-observer';
 
 const css = `
   .mutation-child-list .buttons {

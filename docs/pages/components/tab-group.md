@@ -22,9 +22,9 @@ Tab groups make use of [tabs](/components/tab) and [tab panels](/components/tab-
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup>
@@ -70,9 +70,9 @@ Tabs can be shown on the bottom by setting `placement` to `bottom`.
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup placement="bottom">
@@ -116,9 +116,9 @@ Tabs can be shown on the starting side by setting `placement` to `start`.
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup placement="start">
@@ -162,9 +162,9 @@ Tabs can be shown on the ending side by setting `placement` to `end`.
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup placement="end">
@@ -226,9 +226,9 @@ Add the `closable` attribute to a tab to show a close button. This example shows
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => {
   function handleClose(event) {
@@ -320,9 +320,9 @@ When there are more tabs than horizontal space allows, the nav will be scrollabl
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup>
@@ -430,9 +430,9 @@ When focused, keyboard users can press [[Left]] or [[Right]] to select the desir
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup activation="manual">

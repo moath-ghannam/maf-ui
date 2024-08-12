@@ -22,8 +22,8 @@ While convenient, autoloading may lead to a [Flash of Undefined Custom Elements]
 
 <!-- prettier-ignore -->
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/themes/light.css" />
-<script type="module" src="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/shoelace-autoloader.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/shoelace-autoloader.js"></script>
 ```
 
 </mf-tab-panel>
@@ -34,8 +34,8 @@ The traditional CDN loader registers all maf-ui elements up front. Note that, if
 
 <!-- prettier-ignore -->
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/themes/light.css" />
-<script type="module" src="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/shoelace.js" ></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/shoelace.js" ></script>
 ```
 
 </mf-tab-panel>
@@ -47,7 +47,7 @@ The code above will load the light theme. If you want to use the [dark theme](/g
 
 <!-- prettier-ignore -->
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/themes/dark.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/themes/dark.css" />
 ```
 
 ### Light & Dark Theme
@@ -58,12 +58,12 @@ If you want to load the light or dark theme based on the user's `prefers-color-s
 <link
   rel="stylesheet"
   media="(prefers-color-scheme:light)"
-  href="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/themes/light.css"
+  href="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/themes/light.css"
 />
 <link
   rel="stylesheet"
   media="(prefers-color-scheme:dark)"
-  href="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/themes/dark.css"
+  href="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/themes/dark.css"
   onload="document.documentElement.classList.add('mf-theme-dark');"
 />
 ```
@@ -75,10 +75,10 @@ Now you can [start using maf-ui!](/getting-started/usage)
 If you don't want to use the CDN, you can install maf-ui from npm with the following command.
 
 ```bash
-npm install @maf-ui
+npm install maf-ui-kit
 ```
 
-It's up to you to make the source files available to your app. One way to do this is to create a route in your app called `/shoelace` that serves static files from `node_modules/@maf-ui`.
+It's up to you to make the source files available to your app. One way to do this is to create a route in your app called `/shoelace` that serves static files from `node_modules/maf-ui-kit`.
 
 Once you've done that, add the following tags to your page. Make sure to update `href` and `src` so they point to the route you created.
 
@@ -90,7 +90,7 @@ Once you've done that, add the following tags to your page. Make sure to update 
 Alternatively, [you can use a bundler](#bundling).
 
 :::tip
-For clarity, the docs will usually show imports from `@maf-ui`. If you're not using a module resolver or bundler, you'll need to adjust these paths to point to the folder maf-ui is in.
+For clarity, the docs will usually show imports from `maf-ui-kit`. If you're not using a module resolver or bundler, you'll need to adjust these paths to point to the folder maf-ui is in.
 :::
 
 ## Setting the Base Path
@@ -106,7 +106,7 @@ However, if you're [cherry picking](#cherry-picking) or [bundling](#bundling) ma
 <!-- Option 2: the setBasePath() method -->
 <script src="bundle.js"></script>
 <script type="module">
-  import { setBasePath } from '@maf-ui/%NPMDIR%/utilities/base-path.js';
+  import { setBasePath } from 'maf-ui-kit/%NPMDIR%/utilities/base-path.js';
   setBasePath('/path/to/shoelace/%NPMDIR%');
 </script>
 ```
@@ -121,7 +121,7 @@ Most of the magic behind assets is handled internally by maf-ui, but if you need
 
 ```html
 <script type="module">
-  import { getBasePath, setBasePath } from '@maf-ui/%NPMDIR%/utilities/base-path.js';
+  import { getBasePath, setBasePath } from 'maf-ui-kit/%NPMDIR%/utilities/base-path.js';
 
   setBasePath('/path/to/assets');
 
@@ -145,7 +145,7 @@ Here's an example that loads only the button component. Again, if you're not usi
 <link rel="stylesheet" href="/path/to/shoelace/%NPMDIR%/themes/light.css" />
 
 <script type="module" data-shoelace="/path/to/shoelace/%NPMDIR%">
-  import '@maf-ui/%NPMDIR%/components/button/button.js';
+  import 'maf-ui-kit/%NPMDIR%/components/button/button.js';
 
   // <mf-button> is ready to use!
 </script>
@@ -168,7 +168,7 @@ maf-ui is distributed as a collection of standard ES modules that [all modern br
 To use maf-ui with a bundler, first install maf-ui along with your bundler of choice.
 
 ```bash
-npm install @maf-ui
+npm install maf-ui-kit
 ```
 
 Now it's time to configure your bundler. Configurations vary for each tool, but here are some examples to help you get started.
@@ -179,12 +179,12 @@ Now it's time to configure your bundler. Configurations vary for each tool, but 
 Once your bundler is configured, you'll be able to import maf-ui components and utilities.
 
 ```js
-import '@maf-ui/%NPMDIR%/themes/light.css';
-import '@maf-ui/%NPMDIR%/components/button/button.js';
-import '@maf-ui/%NPMDIR%/components/icon/icon.js';
-import '@maf-ui/%NPMDIR%/components/input/input.js';
-import '@maf-ui/%NPMDIR%/components/rating/rating.js';
-import { setBasePath } from '@maf-ui/%NPMDIR%/utilities/base-path.js';
+import 'maf-ui-kit/%NPMDIR%/themes/light.css';
+import 'maf-ui-kit/%NPMDIR%/components/button/button.js';
+import 'maf-ui-kit/%NPMDIR%/components/icon/icon.js';
+import 'maf-ui-kit/%NPMDIR%/components/input/input.js';
+import 'maf-ui-kit/%NPMDIR%/components/rating/rating.js';
+import { setBasePath } from 'maf-ui-kit/%NPMDIR%/utilities/base-path.js';
 
 // Set the base path to the folder you copied maf-ui's assets to
 setBasePath('/path/to/shoelace/%NPMDIR%');
@@ -193,7 +193,7 @@ setBasePath('/path/to/shoelace/%NPMDIR%');
 ```
 
 :::warning
-Component modules include side effects for registration purposes. Because of this, importing directly from `@maf-ui` may result in a larger bundle size than necessary. For optimal tree shaking, always cherry pick, i.e. import components and utilities from their respective files, as shown above.
+Component modules include side effects for registration purposes. Because of this, importing directly from `maf-ui-kit` may result in a larger bundle size than necessary. For optimal tree shaking, always cherry pick, i.e. import components and utilities from their respective files, as shown above.
 :::
 
 ### Avoiding auto-registering imports
@@ -201,8 +201,8 @@ Component modules include side effects for registration purposes. Because of thi
 By default, imports to components will auto-register themselves. This may not be ideal in all cases. To import just the component's class without auto-registering it's tag we can do the following:
 
 ```diff
-- import MfButton from '@maf-ui/%NPMDIR%/components/button/button.js';
-+ import MfButton from '@maf-ui/%NPMDIR%/components/button/button.component.js';
+- import MfButton from 'maf-ui-kit/%NPMDIR%/components/button/button.js';
++ import MfButton from 'maf-ui-kit/%NPMDIR%/components/button/button.component.js';
 ```
 
 Notice how the import ends with `.component.js`. This is the current convention to convey the import does not register itself.
@@ -217,7 +217,7 @@ You'll notice that the CDN links all start with `/%CDNDIR%/<path>` and npm impor
 
 TL;DR:
 
-- `@maf-ui/%CDNDIR%` is for CDN users
-- `@maf-ui/%NPMDIR%` is for npm users
+- `maf-ui-kit/%CDNDIR%` is for CDN users
+- `maf-ui-kit/%NPMDIR%` is for npm users
 
 This change was introduced in `v2.5.0` to address issues around installations from npm loading multiple versions of libraries (such as the Lit) that maf-ui uses internally.

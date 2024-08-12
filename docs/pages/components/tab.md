@@ -13,7 +13,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
+import MfTab from 'maf-ui-kit/dist/react/tab';
 
 const App = () => (
   <>

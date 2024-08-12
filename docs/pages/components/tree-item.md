@@ -20,8 +20,8 @@ layout: component
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree>
@@ -63,8 +63,8 @@ A tree item can contain other tree items. This allows the node to be expanded or
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree>
@@ -104,8 +104,8 @@ Use the `selected` attribute to select a tree item initially.
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree>
@@ -145,8 +145,8 @@ Use the `expanded` attribute to expand a tree item initially.
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree>

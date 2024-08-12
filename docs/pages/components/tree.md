@@ -37,8 +37,8 @@ layout: component
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree>
@@ -119,8 +119,8 @@ The `selection` attribute lets you change the selection behavior of the tree.
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => {
   const [selection, setSelection] = useState('single');
@@ -199,8 +199,8 @@ Indent guides can be drawn by setting `--indent-guide-width`. You can also chang
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree class="tree-with-lines" style={{ '--indent-guide-width': '1px' }}>
@@ -268,8 +268,8 @@ If you want to disable this behavior after the first load, simply remove the `la
 ```
 
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => {
   const [childItems, setChildItems] = useState([]);
@@ -344,8 +344,8 @@ Use the `expand-icon` and `collapse-icon` slots to change the expand and collaps
 
 <!-- prettier-ignore -->
 ```jsx:react
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => (
   <MfTree>
@@ -429,9 +429,9 @@ Decorative icons can be used before labels to provide hints for each node.
 ```
 
 ```jsx:react
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfTree from '@maf-ui/dist/react/tree';
-import MfTreeItem from '@maf-ui/dist/react/tree-item';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfTree from 'maf-ui-kit/dist/react/tree';
+import MfTreeItem from 'maf-ui-kit/dist/react/tree-item';
 
 const App = () => {
   return (

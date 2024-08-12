@@ -15,7 +15,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfDetails from '@maf-ui/dist/react/details';
+import MfDetails from 'maf-ui-kit/dist/react/details';
 
 const App = () => (
   <MfDetails summary="Toggle Me">
@@ -39,7 +39,7 @@ Use the `disable` attribute to prevent the details from expanding.
 ```
 
 ```jsx:react
-import MfDetails from '@maf-ui/dist/react/details';
+import MfDetails from 'maf-ui-kit/dist/react/details';
 
 const App = () => (
   <MfDetails summary="Disabled" disabled>
@@ -71,8 +71,8 @@ Use the `expand-icon` and `collapse-icon` slots to change the expand and collaps
 ```
 
 ```jsx:react
-import MfDetails from '@maf-ui/dist/react/details';
-import MfIcon from '@maf-ui/dist/react/icon';
+import MfDetails from 'maf-ui-kit/dist/react/details';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
 
 const css = `
   mf-details.custom-icon::part(summary-icon) {

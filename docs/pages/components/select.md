@@ -17,8 +17,8 @@ layout: component
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect>
@@ -51,8 +51,8 @@ Use the `label` attribute to give the select an accessible label. For labels tha
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect label="Select one">
@@ -76,8 +76,8 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect label="Experience" help-text="Please tell us your skill level.">
@@ -101,8 +101,8 @@ Use the `placeholder` attribute to add a placeholder.
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect placeholder="Select one">
@@ -126,8 +126,8 @@ Use the `clearable` attribute to make the control clearable. The clear button on
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect placeholder="Clearable" clearable>
@@ -151,8 +151,8 @@ Add the `filled` attribute to draw a filled select.
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect filled>
@@ -176,8 +176,8 @@ Use the `pill` attribute to give selects rounded edges.
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect pill>
@@ -201,8 +201,8 @@ Use the `disabled` attribute to disable a select.
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect placeholder="Disabled" disabled>
@@ -229,8 +229,8 @@ To allow multiple options to be selected, use the `multiple` attribute. It's a g
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect label="Select a Few" value={["option-1", "option-2", "option-3"]} multiple clearable>
@@ -264,9 +264,9 @@ When using `multiple`, the `value` _attribute_ uses space-delimited values to se
 ```
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect value={["option-1", "option-2"]} multiple clearable>
@@ -296,8 +296,8 @@ Use `<mf-divider>` to group listbox items visually. You can also use `<small>` t
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect>
@@ -340,8 +340,8 @@ Use the `size` attribute to change a select's size. Note that size does not appl
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <>
@@ -383,8 +383,8 @@ The preferred placement of the select's listbox can be set with the `placement` 
 ```
 
 ```jsx:react
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <MfSelect placement="top">
@@ -423,9 +423,9 @@ Use the `prefix` slot to prepend an icon to the control.
 ```
 
 ```jsx:react
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfOption from '@maf-ui/dist/react/option';
-import MfSelect from '@maf-ui/dist/react/select';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfOption from 'maf-ui-kit/dist/react/option';
+import MfSelect from 'maf-ui-kit/dist/react/select';
 
 const App = () => (
   <>

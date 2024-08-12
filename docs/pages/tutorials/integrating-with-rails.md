@@ -25,7 +25,7 @@ This integration has been tested with the following:
 To get started using maf-ui with Rails, the following packages must be installed.
 
 ```bash
-yarn add @maf-ui copy-webpack-plugin
+yarn add maf-ui-kit copy-webpack-plugin
 ```
 
 ### Importing the Default Theme
@@ -33,8 +33,8 @@ yarn add @maf-ui copy-webpack-plugin
 The next step is to import maf-ui's default theme (stylesheet) in `app/javascript/stylesheets/application.scss`.
 
 ```css
-@import '@maf-ui/dist/themes/light';
-@import '@maf-ui/dist/themes/dark'; // Optional dark theme
+@import 'maf-ui-kit/dist/themes/light';
+@import 'maf-ui-kit/dist/themes/dark'; // Optional dark theme
 ```
 
 Fore more details about themes, please refer to [Theme Basics](/getting-started/themes#theme-basics).
@@ -45,7 +45,7 @@ After importing the theme, you'll need to import the JavaScript files for maf-ui
 
 ```js
 import '../stylesheets/application.scss'
-import { setBasePath, MfAlert, MfAnimation, MfButton, ... } from '@maf-ui'
+import { setBasePath, MfAlert, MfAnimation, MfButton, ... } from 'maf-ui-kit'
 
 // ...
 
@@ -73,7 +73,7 @@ environment.plugins.append(
   new CopyPlugin({
     patterns: [
       {
-        from: path.resolve(__dirname, '../../node_modules/@maf-ui/dist/assets'),
+        from: path.resolve(__dirname, '../../node_modules/maf-ui-kit/dist/assets'),
         to: path.resolve(__dirname, '../../public/packs/js/assets')
       }
     ]

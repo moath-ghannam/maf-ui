@@ -13,21 +13,21 @@ maf-ui offers a React version of every component to provide an idiomatic experie
 To add maf-ui to your React app, install the package from npm.
 
 ```bash
-npm install @maf-ui
+npm install maf-ui-kit
 ```
 
 Next, [include a theme](/getting-started/themes) and set the [base path](/getting-started/installation#setting-the-base-path) for icons and other assets. In this example, we'll import the light theme and use the CDN as a base path.
 
 ```jsx
 // App.jsx
-import '@maf-ui/%NPMDIR%/themes/light.css';
-import { setBasePath } from '@maf-ui/%NPMDIR%/utilities/base-path';
+import 'maf-ui-kit/%NPMDIR%/themes/light.css';
+import { setBasePath } from 'maf-ui-kit/%NPMDIR%/utilities/base-path';
 
-setBasePath('https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/');
+setBasePath('https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/');
 ```
 
 :::tip
-If you'd rather not use the CDN for assets, you can create a [build task](https://webpack.js.org/plugins/copy-webpack-plugin/) that copies `node_modules/@maf-ui/%NPMDIR%/assets` into your app's `public` directory. Then you can point the base path to that folder instead.
+If you'd rather not use the CDN for assets, you can create a [build task](https://webpack.js.org/plugins/copy-webpack-plugin/) that copies `node_modules/maf-ui-kit/%NPMDIR%/assets` into your app's `public` directory. Then you can point the base path to that folder instead.
 :::
 
 Now you can start using components!
@@ -43,7 +43,7 @@ Preact users facing type errors using components may benefit from setting "paths
 Every maf-ui component is available to import as a React component. Note that we're importing the `<MfButton>` _React component_ instead of the `<mf-button>` _custom element_ in the example below.
 
 ```jsx
-import MfButton from '@maf-ui/%NPMDIR%/react/button';
+import MfButton from 'maf-ui-kit/%NPMDIR%/react/button';
 
 const MyComponent = () => <MfButton variant="primary">Click me</MfButton>;
 
@@ -55,14 +55,14 @@ export default MyComponent;
 Previously, it was recommended to import from a single entrypoint like so:
 
 ```jsx
-import { MfButton } from '@maf-ui/%NPMDIR%/react';
+import { MfButton } from 'maf-ui-kit/%NPMDIR%/react';
 ```
 
 However, tree-shaking extra maf-ui components proved to be a challenge. As a result, we now recommend cherry-picking components you want to use, rather than importing from a single entrypoint.
 
 ```diff
-- import { MfButton } from '@maf-ui/%NPMDIR%/react';
-+ import MfButton from '@maf-ui/%NPMDIR%/react/button';
+- import { MfButton } from 'maf-ui-kit/%NPMDIR%/react';
++ import MfButton from 'maf-ui-kit/%NPMDIR%/react/button';
 ```
 
 You can find a copy + paste import for each component in the "importing" section of its documentation.
@@ -75,7 +75,7 @@ Here's how you can bind the input's value to a state variable.
 
 ```jsx
 import { useState } from 'react';
-import MfInput from '@maf-ui/%NPMDIR%/react/input';
+import MfInput from 'maf-ui-kit/%NPMDIR%/react/input';
 
 function MyComponent() {
   const [value, setValue] = useState('');
@@ -90,8 +90,8 @@ If you're using TypeScript, it's important to note that `event.target` will be a
 
 ```tsx
 import { useState } from 'react';
-import MfInput from '@maf-ui/%NPMDIR%/react/input';
-import type MfInputElement from '@maf-ui/%NPMDIR%/components/input/input';
+import MfInput from 'maf-ui-kit/%NPMDIR%/react/input';
+import type MfInputElement from 'maf-ui-kit/%NPMDIR%/components/input/input';
 
 function MyComponent() {
   const [value, setValue] = useState('');
@@ -106,8 +106,8 @@ You can also import the event type for use in your callbacks, shown below.
 
 ```tsx
 import { useCallback, useState } from 'react';
-import MfInput, { type MfInputEvent } from '@maf-ui/%NPMDIR%/react/input';
-import type MfInputElement from '@maf-ui/%NPMDIR%/components/input/input';
+import MfInput, { type MfInputEvent } from 'maf-ui-kit/%NPMDIR%/react/input';
+import type MfInputElement from 'maf-ui-kit/%NPMDIR%/components/input/input';
 
 function MyComponent() {
   const [value, setValue] = useState('');

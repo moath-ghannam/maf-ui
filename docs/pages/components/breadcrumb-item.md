@@ -17,9 +17,9 @@ layout: component
 ```
 
 ```jsx:react
-import MfBreadcrumb from '@maf-ui/dist/react/breadcrumb';
-import MfBreadcrumbItem from '@maf-ui/dist/react/breadcrumb-item';
-import MfIcon from '@maf-ui/dist/react/icon';
+import MfBreadcrumb from 'maf-ui-kit/dist/react/breadcrumb';
+import MfBreadcrumbItem from 'maf-ui-kit/dist/react/breadcrumb-item';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
 
 const App = () => (
   <MfBreadcrumb>

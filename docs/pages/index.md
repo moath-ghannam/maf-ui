@@ -25,8 +25,8 @@ Add the following code to your page.
 
 <!-- prettier-ignore -->
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/themes/light.css" />
-<script type="module" src="https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/shoelace-autoloader.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/shoelace-autoloader.js"></script>
 ```
 
 Now you have access to all of maf-ui's components! Try adding a button:

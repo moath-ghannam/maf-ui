@@ -14,8 +14,8 @@ layout: component
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
 
 const App = () => (
   <MfButtonGroup label="Alignment">
@@ -57,8 +57,8 @@ All button sizes are supported, but avoid mixing sizes within the same button gr
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
 
 const App = () => (
   <>
@@ -134,8 +134,8 @@ Theme buttons are supported through the button's `variant` attribute.
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
 
 const App = () => (
   <>
@@ -213,8 +213,8 @@ Pill buttons are supported through the button's `pill` attribute.
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
 
 const App = () => (
   <>
@@ -283,11 +283,11 @@ Dropdowns can be placed inside button groups as long as the trigger is an `<mf-b
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfButtonGroup label="Example Button Group">
@@ -328,11 +328,11 @@ Create a split button using a button and a dropdown. Use a [visually hidden](/co
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
-import MfDropdown from '@maf-ui/dist/react/dropdown';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
+import MfDropdown from 'maf-ui-kit/dist/react/dropdown';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfButtonGroup label="Example Button Group">
@@ -370,9 +370,9 @@ Buttons can be wrapped in tooltips to provide more detail when the user interact
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <>
@@ -441,10 +441,10 @@ Create interactive toolbars with button groups.
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfButtonGroup from '@maf-ui/dist/react/button-group';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfButtonGroup from 'maf-ui-kit/dist/react/button-group';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const css = `
   .button-group-toolbar mf-button-group:not(:last-of-type) {

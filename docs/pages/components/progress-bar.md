@@ -10,7 +10,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfProgressBar from '@maf-ui/dist/react/progress-bar';
+import MfProgressBar from 'maf-ui-kit/dist/react/progress-bar';
 
 const App = () => <MfProgressBar value={50} />;
 ```
@@ -26,7 +26,7 @@ Use the `label` attribute to label the progress bar and tell assistive devices h
 ```
 
 ```jsx:react
-import MfProgressBar from '@maf-ui/dist/react/progress-bar';
+import MfProgressBar from 'maf-ui-kit/dist/react/progress-bar';
 
 const App = () => <MfProgressBar value="50" label="Upload progress" />;
 ```
@@ -42,7 +42,7 @@ Use the `--height` custom property to set the progress bar's height.
 {% raw %}
 
 ```jsx:react
-import MfProgressBar from '@maf-ui/dist/react/progress-bar';
+import MfProgressBar from 'maf-ui-kit/dist/react/progress-bar';
 
 const App = () => <MfProgressBar value={50} style={{ '--height': '6px' }} />;
 ```
@@ -82,9 +82,9 @@ Use the default slot to show a value.
 
 ```jsx:react
 import { useState } from 'react';
-import MfButton from '@maf-ui/dist/react/button';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfProgressBar from '@maf-ui/dist/react/progress-bar';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfProgressBar from 'maf-ui-kit/dist/react/progress-bar';
 
 const App = () => {
   const [value, setValue] = useState(50);
@@ -123,7 +123,7 @@ The `indeterminate` attribute can be used to inform the user that the operation 
 ```
 
 ```jsx:react
-import MfProgressBar from '@maf-ui/dist/react/progress-bar';
+import MfProgressBar from 'maf-ui-kit/dist/react/progress-bar';
 
 const App = () => <MfProgressBar indeterminate />;
 ```

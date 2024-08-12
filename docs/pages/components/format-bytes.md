@@ -24,9 +24,9 @@ layout: component
 
 ```jsx:react
 import { useState } from 'react';
-import MfButton from '@maf-ui/dist/react/button';
-import MfFormatBytes from '@maf-ui/dist/react/format-bytes';
-import MfInput from '@maf-ui/dist/react/input';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfFormatBytes from 'maf-ui-kit/dist/react/format-bytes';
+import MfInput from 'maf-ui-kit/dist/react/input';
 
 const App = () => {
   const [value, setValue] = useState(1000);
@@ -64,7 +64,7 @@ Set the `value` attribute to a number to get the value in bytes.
 ```
 
 ```jsx:react
-import MfFormatBytes from '@maf-ui/dist/react/format-bytes';
+import MfFormatBytes from 'maf-ui-kit/dist/react/format-bytes';
 
 const App = () => (
   <>
@@ -91,7 +91,7 @@ To get the value in bits, set the `unit` attribute to `bit`.
 ```
 
 ```jsx:react
-import MfFormatBytes from '@maf-ui/dist/react/format-bytes';
+import MfFormatBytes from 'maf-ui-kit/dist/react/format-bytes';
 
 const App = () => (
   <>
@@ -118,7 +118,7 @@ Use the `lang` attribute to set the number formatting locale.
 ```
 
 ```jsx:react
-import MfFormatBytes from '@maf-ui/dist/react/format-bytes';
+import MfFormatBytes from 'maf-ui-kit/dist/react/format-bytes';
 
 const App = () => (
   <>

@@ -14,8 +14,8 @@ layout: component
 ```
 
 ```jsx:react
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" name="a" value="1">
@@ -41,8 +41,8 @@ Add descriptive help text to a radio group with the `help-text` attribute. For h
 ```
 
 ```jsx:react
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" help-text="Choose the most appropriate option." name="a" value="1">
@@ -66,8 +66,8 @@ const App = () => (
 ```
 
 ```jsx:react
-import MfRadioButton from '@maf-ui/dist/react/radio-button';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadioButton from 'maf-ui-kit/dist/react/radio-button';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" name="a" value="1">
@@ -91,8 +91,8 @@ Radios and radio buttons can be disabled by adding the `disabled` attribute to t
 ```
 
 ```jsx:react
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => (
   <MfRadioGroup label="Select an option" name="a" value="1">
@@ -127,8 +127,8 @@ The size of [Radios](/components/radio) and [Radio Buttons](/components/radio-bu
 
 ```jsx react
 import { useState } from 'react';
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 
 const App = () => {
   const [size, setSize] = useState('medium');
@@ -182,10 +182,10 @@ Setting the `required` attribute to make selecting an option mandatory. If a val
 ```
 
 ```jsx:react
-import MfButton from '@maf-ui/dist/react/button';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 const App = () => {
   function handleSubmit(event) {
     event.preventDefault();
@@ -255,10 +255,10 @@ Use the `setCustomValidity()` method to set a custom validation message. This wi
 
 ```jsx:react
 import { useEffect, useRef } from 'react';
-import MfButton from '@maf-ui/dist/react/button';
-import MfIcon from '@maf-ui/dist/react/icon';
-import MfRadio from '@maf-ui/dist/react/radio';
-import MfRadioGroup from '@maf-ui/dist/react/radio-group';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
+import MfRadio from 'maf-ui-kit/dist/react/radio';
+import MfRadioGroup from 'maf-ui-kit/dist/react/radio-group';
 const App = () => {
   const radioGroup = useRef(null);
   const errorMessage = 'You must choose this option';

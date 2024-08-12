@@ -12,7 +12,7 @@ For a full list of icons that come bundled with maf-ui, refer to the [icon compo
 ```
 
 ```jsx:react
-import MfIconButton from '@maf-ui/dist/react/icon-button';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
 
 const App = () => <MfIconButton name="gear" label="Settings" />;
 ```
@@ -32,7 +32,7 @@ Icon buttons inherit their parent element's `font-size`.
 {% raw %}
 
 ```jsx:react
-import MfIconButton from '@maf-ui/dist/react/icon-button';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
 
 const App = () => (
   <>
@@ -73,7 +73,7 @@ Icon buttons are designed to have a uniform appearance, so their color is not in
 ```
 
 ```jsx:react
-import MfIconButton from '@maf-ui/dist/react/icon-button';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
 
 const css = `
   .icon-button-color mf-icon-button::part(base) {
@@ -112,7 +112,7 @@ Use the `href` attribute to convert the button to a link.
 ```
 
 ```jsx:react
-import MfIconButton from '@maf-ui/dist/react/icon-button';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
 
 const App = () => <MfIconButton name="gear" label="Settings" href="https://example.com" target="_blank" />;
 ```
@@ -128,8 +128,8 @@ Wrap a tooltip around an icon button to provide contextual information to the us
 ```
 
 ```jsx:react
-import MfIconButton from '@maf-ui/dist/react/icon-button';
-import MfTooltip from '@maf-ui/dist/react/tooltip';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
+import MfTooltip from 'maf-ui-kit/dist/react/tooltip';
 
 const App = () => (
   <MfTooltip content="Settings">
@@ -147,7 +147,7 @@ Use the `disabled` attribute to disable the icon button.
 ```
 
 ```jsx:react
-import MfIconButton from '@maf-ui/dist/react/icon-button';
+import MfIconButton from 'maf-ui-kit/dist/react/icon-button';
 
 const App = () => <MfIconButton name="gear" label="Settings" disabled />;
 ```

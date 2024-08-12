@@ -39,8 +39,8 @@ QR codes are useful for providing small pieces of information to users who can q
 
 ```jsx:react
 import { useState } from 'react';
-import MfQrCode from '@maf-ui/dist/react/qr-code';
-import MfInput from '@maf-ui/dist/react/input';
+import MfQrCode from 'maf-ui-kit/dist/react/qr-code';
+import MfInput from 'maf-ui-kit/dist/react/input';
 
 const css = `
   .qr-overview {
@@ -81,7 +81,7 @@ Use the `fill` and `background` attributes to modify the QR code's colors. You s
 ```
 
 ```jsx:react
-import MfQrCode from '@maf-ui/dist/react/qr-code';
+import MfQrCode from 'maf-ui-kit/dist/react/qr-code';
 
 const App = () => <MfQrCode value="https://maf-ui/" fill="deeppink" background="white" />;
 ```
@@ -95,7 +95,7 @@ Use the `size` attribute to change the size of the QR code.
 ```
 
 ```jsx:react
-import MfQrCode from '@maf-ui/dist/react/qr-code';
+import MfQrCode from 'maf-ui-kit/dist/react/qr-code';
 
 const App = () => <MfQrCode value="https://maf-ui/" size="64" />;
 ```
@@ -109,7 +109,7 @@ Create a rounded effect with the `radius` attribute.
 ```
 
 ```jsx:react
-import MfQrCode from '@maf-ui/dist/react/qr-code';
+import MfQrCode from 'maf-ui-kit/dist/react/qr-code';
 
 const App = () => <MfQrCode value="https://maf-ui/" radius="0.5" />;
 ```
@@ -136,7 +136,7 @@ QR codes can be rendered with various levels of [error correction](https://www.q
 ```
 
 ```jsx:react
-import MfQrCode from '@maf-ui/dist/react/qr-code';
+import MfQrCode from 'maf-ui-kit/dist/react/qr-code';
 
 const css = `
   .qr-error-correction {

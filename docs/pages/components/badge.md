@@ -10,7 +10,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
 
 const App = () => <MfBadge>Badge</MfBadge>;
 ```
@@ -30,7 +30,7 @@ Set the `variant` attribute to change the badge's variant.
 ```
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
 
 const App = () => (
   <>
@@ -56,7 +56,7 @@ Use the `pill` attribute to give badges rounded edges.
 ```
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
 
 const App = () => (
   <>
@@ -100,7 +100,7 @@ Use the `pulse` attribute to draw attention to the badge with a subtle animation
 ```
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
 
 const css = `
   .badge-pulse mf-badge:not(:last-of-type) {
@@ -157,8 +157,8 @@ One of the most common use cases for badges is attaching them to buttons. To mak
 {% raw %}
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
-import MfButton from '@maf-ui/dist/react/button';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
+import MfButton from 'maf-ui-kit/dist/react/button';
 
 const App = () => (
   <>
@@ -201,11 +201,11 @@ When including badges in menu items, use the `suffix` slot to make sure they're 
 {% raw %}
 
 ```jsx:react
-import MfBadge from '@maf-ui/dist/react/badge';
-import MfButton from '@maf-ui/dist/react/button';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
-import MfMenuLabel from '@maf-ui/dist/react/menu-label';
+import MfBadge from 'maf-ui-kit/dist/react/badge';
+import MfButton from 'maf-ui-kit/dist/react/button';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
+import MfMenuLabel from 'maf-ui-kit/dist/react/menu-label';
 
 const App = () => (
   <MfMenu

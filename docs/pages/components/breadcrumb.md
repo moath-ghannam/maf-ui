@@ -17,8 +17,8 @@ Breadcrumbs are usually placed before a page's main content with the current pag
 ```
 
 ```jsx:react
-import MfBreadcrumb from '@maf-ui/dist/react/breadcrumb';
-import MfBreadcrumbItem from '@maf-ui/dist/react/breadcrumb-item';
+import MfBreadcrumb from 'maf-ui-kit/dist/react/breadcrumb';
+import MfBreadcrumbItem from 'maf-ui-kit/dist/react/breadcrumb-item';
 
 const App = () => (
   <MfBreadcrumb>
@@ -51,8 +51,8 @@ For websites, you'll probably want to use links instead. You can make any breadc
 ```
 
 ```jsx:react
-import MfBreadcrumb from '@maf-ui/dist/react/breadcrumb';
-import MfBreadcrumbItem from '@maf-ui/dist/react/breadcrumb-item';
+import MfBreadcrumb from 'maf-ui-kit/dist/react/breadcrumb';
+import MfBreadcrumbItem from 'maf-ui-kit/dist/react/breadcrumb-item';
 
 const App = () => (
   <MfBreadcrumb>
@@ -99,9 +99,9 @@ Use the `separator` slot to change the separator that goes between breadcrumb it
 ```
 
 ```jsx:react
-import '@maf-ui/dist/components/icon/icon.js';
-import MfBreadcrumb from '@maf-ui/dist/react/breadcrumb';
-import MfBreadcrumbItem from '@maf-ui/dist/react/breadcrumb-item';
+import 'maf-ui-kit/dist/components/icon/icon.js';
+import MfBreadcrumb from 'maf-ui-kit/dist/react/breadcrumb';
+import MfBreadcrumbItem from 'maf-ui-kit/dist/react/breadcrumb-item';
 
 const App = () => (
   <>
@@ -149,9 +149,9 @@ Use the `prefix` slot to add content before any breadcrumb item.
 ```
 
 ```jsx:react
-import MfBreadcrumb from '@maf-ui/dist/react/breadcrumb';
-import MfBreadcrumbItem from '@maf-ui/dist/react/breadcrumb-item';
-import MfIcon from '@maf-ui/dist/react/icon';
+import MfBreadcrumb from 'maf-ui-kit/dist/react/breadcrumb';
+import MfBreadcrumbItem from 'maf-ui-kit/dist/react/breadcrumb-item';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
 
 const App = () => (
   <MfBreadcrumb>
@@ -181,9 +181,9 @@ Use the `suffix` slot to add content after any breadcrumb item.
 ```
 
 ```jsx:react
-import MfBreadcrumb from '@maf-ui/dist/react/breadcrumb';
-import MfBreadcrumbItem from '@maf-ui/dist/react/breadcrumb-item';
-import MfIcon from '@maf-ui/dist/react/icon';
+import MfBreadcrumb from 'maf-ui-kit/dist/react/breadcrumb';
+import MfBreadcrumbItem from 'maf-ui-kit/dist/react/breadcrumb-item';
+import MfIcon from 'maf-ui-kit/dist/react/icon';
 
 const App = () => (
   <MfBreadcrumb>
@@ -231,7 +231,7 @@ import {
   MfIcon,
   MfMenu,
   MfMenuItem
-} from '@maf-ui/dist/react';
+} from 'maf-ui-kit/dist/react';
 
 const App = () => (
   <MfBreadcrumb>

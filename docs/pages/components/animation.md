@@ -27,7 +27,7 @@ To animate an element, wrap it in `<mf-animation>` and set an animation `name`. 
 ```
 
 ```jsx:react
-import MfAnimation from '@maf-ui/dist/react/animation';
+import MfAnimation from 'maf-ui-kit/dist/react/animation';
 
 const css = `
   .animation-overview .box {
@@ -173,7 +173,7 @@ Use an [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/
 
 ```jsx:react
 import { useEffect, useRef, useState } from 'react';
-import MfAnimation from '@maf-ui/dist/react/animation';
+import MfAnimation from 'maf-ui-kit/dist/react/animation';
 
 const css = `
   .animation-scroll {
@@ -262,7 +262,7 @@ Supply your own [keyframe formats](https://developer.mozilla.org/en-US/docs/Web/
 ```
 
 ```jsx:react
-import MfAnimation from '@maf-ui/dist/react/animation';
+import MfAnimation from 'maf-ui-kit/dist/react/animation';
 
 const css = `
   .animation-keyframes .box {
@@ -329,8 +329,8 @@ Animations won't play until you apply the `play` attribute. You can omit it init
 
 ```jsx:react
 import { useState } from 'react';
-import MfAnimation from '@maf-ui/dist/react/animation';
-import MfButton from '@maf-ui/dist/react/button';
+import MfAnimation from 'maf-ui-kit/dist/react/animation';
+import MfButton from 'maf-ui-kit/dist/react/button';
 
 const App = () => {
   const [play, setPlay] = useState(false);

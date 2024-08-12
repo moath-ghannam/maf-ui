@@ -20,9 +20,9 @@ layout: component
 ```
 
 ```jsx:react
-import MfTab from '@maf-ui/dist/react/tab';
-import MfTabGroup from '@maf-ui/dist/react/tab-group';
-import MfTabPanel from '@maf-ui/dist/react/tab-panel';
+import MfTab from 'maf-ui-kit/dist/react/tab';
+import MfTabGroup from 'maf-ui-kit/dist/react/tab-group';
+import MfTabPanel from 'maf-ui-kit/dist/react/tab-panel';
 
 const App = () => (
   <MfTabGroup>

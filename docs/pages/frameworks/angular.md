@@ -15,7 +15,7 @@ Angular [plays nice](https://custom-elements-everywhere.com/#angular) with custo
 To add maf-ui to your Angular app, install the package from npm.
 
 ```bash
-npm install @maf-ui
+npm install maf-ui-kit
 ```
 
 ### Update the Angular Configuration
@@ -32,10 +32,10 @@ Its also important to load the components by using a `<script>` tag into the ind
       ...
       "styles": [
         "src/styles.scss",
-        "@maf-ui/dist/themes/light.css"
+        "maf-ui-kit/dist/themes/light.css"
        ],
       "scripts": [
-        "@maf-ui/dist/shoelace.js"
+        "maf-ui-kit/dist/shoelace.js"
       ]
       ...
 ```
@@ -45,13 +45,13 @@ Its also important to load the components by using a `<script>` tag into the ind
 Next, set the [base path](/getting-started/installation#setting-the-base-path) for icons and other assets in the `main.ts`. In this example, we'll use the CDN as a base path.
 
 ```jsx
-import { setBasePath } from '@maf-ui/%NPMDIR%/utilities/base-path';
+import { setBasePath } from 'maf-ui-kit/%NPMDIR%/utilities/base-path';
 
-setBasePath('https://cdn.jsdelivr.net/npm/@maf-ui@%VERSION%/%CDNDIR%/');
+setBasePath('https://cdn.jsdelivr.net/npm/maf-ui-kit@%VERSION%/%CDNDIR%/');
 ```
 
 :::tip
-If you'd rather not use the CDN for assets, you can create a build task that copies `node_modules/@maf-ui/%NPMDIR%/assets` into a public folder in your app. Then you can point the base path to that folder instead.
+If you'd rather not use the CDN for assets, you can create a build task that copies `node_modules/maf-ui-kit/%NPMDIR%/assets` into a public folder in your app. Then you can point the base path to that folder instead.
 :::
 
 ## Configuration
@@ -77,7 +77,7 @@ export class AppModule {}
 ## Reference maf-ui components in your Angular component code
 
 ```js
-import { MfDrawer } from '@maf-ui';
+import { MfDrawer } from 'maf-ui-kit';
 
 @Component({
   selector: 'app-drawer-example',

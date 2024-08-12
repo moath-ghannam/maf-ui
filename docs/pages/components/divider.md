@@ -10,7 +10,7 @@ layout: component
 ```
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
 
 const App = () => <MfDivider />;
 ```
@@ -28,7 +28,7 @@ Use the `--width` custom property to change the width of the divider.
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
 
 const App = () => <MfDivider style={{ '--width': '4px' }} />;
 ```
@@ -46,7 +46,7 @@ Use the `--color` custom property to change the color of the divider.
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
 
 const App = () => <MfDivider style={{ '--color': 'tomato' }} />;
 ```
@@ -68,7 +68,7 @@ Use the `--spacing` custom property to change the amount of space between the di
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
 
 const App = () => (
   <>
@@ -98,7 +98,7 @@ Add the `vertical` attribute to draw the divider in a vertical orientation. The 
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
 
 const App = () => (
   <div
@@ -138,9 +138,9 @@ Use dividers in [menus](/components/menu) to visually group menu items.
 {% raw %}
 
 ```jsx:react
-import MfDivider from '@maf-ui/dist/react/divider';
-import MfMenu from '@maf-ui/dist/react/menu';
-import MfMenuItem from '@maf-ui/dist/react/menu-item';
+import MfDivider from 'maf-ui-kit/dist/react/divider';
+import MfMenu from 'maf-ui-kit/dist/react/menu';
+import MfMenuItem from 'maf-ui-kit/dist/react/menu-item';
 
 const App = () => (
   <MfMenu style={{ maxWidth: '200px' }}>

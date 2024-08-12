@@ -14,7 +14,7 @@ The included content will be inserted into the `<mf-include>` element's default 
 ```
 
 ```jsx:react
-import MfInclude from '@maf-ui/dist/react/include';
+import MfInclude from 'maf-ui-kit/dist/react/include';
 
 const App = () => <MfInclude src="https://shoelace.style/assets/examples/include.html" />;
 ```

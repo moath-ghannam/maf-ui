@@ -204,7 +204,7 @@ maf-ui ships with a file called `vscode.html-custom-data.json` that can be used 
 
 ```js
 {
-  "html.customData": ["./node_modules/@maf-ui/dist/vscode.html-custom-data.json"]
+  "html.customData": ["./node_modules/maf-ui-kit/dist/vscode.html-custom-data.json"]
 }
 ```
 
@@ -214,7 +214,7 @@ If `settings.json` already exists, simply add the above line to the root of the 
 
 If you are using a [JetBrains IDE](https://www.jetbrains.com/) and you are installing maf-ui from NPM, the editor will automatically detect the `web-types.json` file from the package and you should immediately see component information in your editor.
 
-If you are installing from the CDN, you can [download a local copy](https://cdn.jsdelivr.net/npm/@maf-ui/dist/web-types.json) and add it to the root of your project. Be sure to add a reference to the `web-types.json` file in your `package.json` in order for your editor to properly detect it.
+If you are installing from the CDN, you can [download a local copy](https://cdn.jsdelivr.net/npm/maf-ui-kit/dist/web-types.json) and add it to the root of your project. Be sure to add a reference to the `web-types.json` file in your `package.json` in order for your editor to properly detect it.
 
 ```json
 {

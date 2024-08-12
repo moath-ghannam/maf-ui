@@ -1,7 +1,7 @@
 (() => {
   function convertModuleLinks(html) {
     html = html
-      .replace(/@shoelace-style\/shoelace/g, `https://esm.sh/@maf-ui@${shoelaceVersion}`)
+      .replace(/@shoelace-style\/shoelace/g, `https://esm.sh/maf-ui-kit@${shoelaceVersion}`)
       .replace(/from 'react'/g, `from 'https://esm.sh/react@${reactVersion}'`)
       .replace(/from "react"/g, `from "https://esm.sh/react@${reactVersion}"`);
 
@@ -182,7 +182,7 @@
       // HTML templates
       if (!isReact) {
         htmlTemplate =
-          `<script type="module" src="https://cdn.jsdelivr.net/npm/@maf-ui@${shoelaceVersion}/${cdndir}/shoelace.js"></script>\n` +
+          `<script type="module" src="https://cdn.jsdelivr.net/npm/maf-ui-kit@${shoelaceVersion}/${cdndir}/shoelace.js"></script>\n` +
           `\n${htmlExample}`;
         jsTemplate = '';
       }
@@ -193,10 +193,10 @@
         jsTemplate =
           `import React from 'https://esm.sh/react@${reactVersion}';\n` +
           `import ReactDOM from 'https://esm.sh/react-dom@${reactVersion}';\n` +
-          `import { setBasePath } from 'https://esm.sh/@maf-ui@${shoelaceVersion}/${cdndir}/utilities/base-path';\n` +
+          `import { setBasePath } from 'https://esm.sh/maf-ui-kit@${shoelaceVersion}/${cdndir}/utilities/base-path';\n` +
           `\n` +
           `// Set the base path for Shoelace assets\n` +
-          `setBasePath('https://esm.sh/@maf-ui@${shoelaceVersion}/${npmdir}/')\n` +
+          `setBasePath('https://esm.sh/maf-ui-kit@${shoelaceVersion}/${npmdir}/')\n` +
           `\n${convertModuleLinks(reactExample)}\n` +
           `\n` +
           `ReactDOM.render(<App />, document.getElementById('root'));`;
@@ -204,7 +204,7 @@
 
       // CSS templates
       cssTemplate =
-        `@import 'https://cdn.jsdelivr.net/npm/@maf-ui@${shoelaceVersion}/${cdndir}/themes/${
+        `@import 'https://cdn.jsdelivr.net/npm/maf-ui-kit@${shoelaceVersion}/${cdndir}/themes/${
           isDark ? 'dark' : 'light'
         }.css';\n` +
         '\n' +
