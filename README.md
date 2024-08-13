@@ -15,15 +15,7 @@ Shoemakers, or "maf-ui developers," can use this documentation to learn how to b
 
 **You don't need to do any of this to use maf-ui!** This page is for people who want to contribute to the project, tinker with the source, or create a custom build of maf-ui.
 
-### What are you using to build maf-ui?
 
-Components are built with [LitElement](https://lit-element.polymer-project.org/), a custom elements base class that provides an intuitive API and reactive data binding. The build is a custom script with bundling powered by [esbuild](https://esbuild.github.io/).
-
-```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/maf-ui
-cd maf-ui
-npm install
-```
 
 ### Developing
 
